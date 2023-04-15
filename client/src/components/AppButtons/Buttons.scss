@@ -1,0 +1,68 @@
+@import "../../styles/colors.scss";
+
+/* ---------- MEDIA SCREEN -- MOBILE & TABLET ---------- */
+@media (max-width: 965px) {
+  .app__button {
+    font-size: 16px;
+  }
+  .app__button.mobile {
+    display: inline-block;
+  }
+  .app__button.desktop {
+    display: none;
+  }
+}
+/* ---------- MEDIA SCREEN -- DESKTOP ---------- */
+@media screen and (min-width: 965px) {
+  .app__button {
+    font-size: 14px;
+  }
+  .app__button.mobile {
+    display: none;
+  }
+  .app__button.desktop {
+    display: inline-block;
+  }
+}
+
+.app__button {
+  background-color: $background_color_white;
+  color: $text_color_blue;
+  border: 2px solid $border_color_blue;
+  border-radius: 4px;
+  margin: 10px 5px;
+  padding: 5px 10px;
+}
+
+.app__button:hover {
+  background-color: $background_color_blue;
+  color: $text_color_white;
+}
+.app__button:active:focus {
+  outline: none;
+}
+
+.tab-button {
+  background-color: $background_color_white;
+  color: $main_text_color;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 20px;
+  margin: 0 5px;
+}
+
+.tab-button.active {
+  color: $text_color_blue_tabs;
+  border-bottom: 2px solid $text_color_blue_tabs;
+}
+
+.tab-button__unreaded-task_count {
+  background-color: $background_task_count_grey;
+  color: $text_color_white;
+  border-radius: 15px;
+
+  font-size: 10px;
+  padding: 3px 6px;
+  margin-left: 10px;
+}

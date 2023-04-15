@@ -1,0 +1,171 @@
+@import "../../styles/colors.scss";
+
+/* ---------- MEDIA SCREEN -- MOBILE ---------- */
+@media (max-width: 600px) {
+  .modal__body {
+    width: 100vw;
+    height: 100vh;
+  }
+  .modal__input,
+  .modal__email,
+  .modal__textarea {
+    width: 86vw;
+    font-size: 16px;
+  }
+  .modal__email_users,
+  .modal__email_input {
+    font-size: 16px;
+  }
+  .modal__select {
+    width: 38vw;
+    font-size: 16px;
+  }
+}
+
+/* ---------- MEDIA SCREEN -- TABLET && DESKTOP ---------- */
+@media (min-width: 601px) {
+  .modal {
+    padding-top: 5rem;
+  }
+  .modal__body {
+    width: 500px;
+    height: 700px;
+    border-radius: 5px;
+  }
+  .modal__input,
+  .modal__email,
+  .modal__textarea {
+    width: 500px;
+    font-size: 14px;
+  }
+  .modal__email_users,
+  .modal__email_input {
+    font-size: 14px;
+  }
+  .modal__select {
+    width: 200px;
+    font-size: 14px;
+  }
+}
+
+/* ---------- MEDIA SCREEN -- DESKTOP ---------- */
+@media (min-width: 965px) {
+  .modal {
+    padding-top: 5rem;
+  }
+  .modal__body {
+    width: 500px;
+    height: 600px;
+    border-radius: 5px;
+  }
+  .modal__input,
+  .modal__email,
+  .modal__textarea {
+    width: 500px;
+    font-size: 14px;
+  }
+  .modal__email_users,
+  .modal__email_input {
+    font-size: 14px;
+  }
+  .modal__select {
+    width: 200px;
+    font-size: 14px;
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: $background_modal_color_grey;
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+}
+
+.modal__body {
+  padding: 7vmin;
+  background: $background_color_white;
+}
+
+.modal__title {
+  color: $text_color_blue;
+  text-align: center;
+  font-size: 18px;
+}
+
+.modal__email {
+  display: flex;
+  justify-self: start;
+  flex-wrap: wrap;
+}
+
+.modal__email_checked {
+  border: 1px solid $border_color_light;
+  border-radius: 3px;
+  margin: 2px 5px;
+  padding: 0 5px;
+}
+
+.modal__email_remove {
+  margin-left: 10px;
+}
+
+.modal__email_remove:hover {
+  color: $background_color_blue;
+}
+
+.modal__email_users {
+  height: 60px;
+  overflow: scroll;
+  border: 1px solid $border_color_light;
+}
+
+.modal__email_input {
+  border: none;
+  outline: none;
+  margin-left: 5px;
+}
+
+.modal__form {
+  margin: 20px 0;
+}
+
+.row__title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px;
+  width: 100%;
+}
+
+.modal__row {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5px 0;
+}
+
+.modal__email,
+.modal__input,
+.modal__select,
+.modal__textarea {
+  box-sizing: border-box;
+  outline: none;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid $border_color_dark;
+}
+
+.modal__textarea {
+  height: 100px;
+}
+
+.modal__controls {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 10px auto;
+}

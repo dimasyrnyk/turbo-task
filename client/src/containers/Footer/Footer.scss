@@ -1,0 +1,18 @@
+@import "../../styles/colors.scss";
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 60px;
+  margin-top: 20px;
+}
+
+footer a {
+  color: $links_color_black;
+}
+
+footer a:hover {
+  color: $links_color_grey;
+}

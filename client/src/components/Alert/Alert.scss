@@ -1,0 +1,23 @@
+@import "../../styles/colors.scss";
+
+[class^="alert__text"] {
+  position: absolute;
+  top: 12px;
+  right: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 30px;
+  margin: 10px auto;
+  font-size: 16px;
+  text-align: center;
+  color: $alert_text_color_black;
+  border-radius: 4px;
+}
+
+.alert__text_red {
+  background-color: $background_alert_red;
+}
+
+.alert__text_green {
+  background-color: $background_alert_green;
+}

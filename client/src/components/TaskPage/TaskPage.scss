@@ -1,0 +1,76 @@
+/* ---------- MEDIA SCREEN -- MOBILE ---------- */
+@media (max-width: 600px) {
+  .task__container {
+    width: 90%;
+  }
+  .task__deadline,
+  .task__users,
+  .task__status {
+    font-size: 16px;
+  }
+}
+
+/* ---------- MEDIA SCREEN -- TABLET ---------- */
+@media screen and (min-width: 601px) {
+  .task__container {
+    width: 80%;
+  }
+  .task__deadline,
+  .task__users,
+  .task__status {
+    font-size: 14px;
+  }
+}
+
+/* ---------- MEDIA SCREEN -- DESKTOP ---------- */
+@media screen and (min-width: 965px) {
+  .task__container {
+    width: 70%;
+  }
+  .task__deadline,
+  .task__users,
+  .task__status {
+    font-size: 14px;
+  }
+}
+
+.task__container {
+  margin: 0 auto;
+}
+
+.task__title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.task__priority {
+  font-size: 16px;
+  font-weight: lighter;
+  padding: 0 5px;
+  margin: 0 10px;
+}
+
+.task__deadline,
+.task__users,
+.task__status {
+  margin: 10px 0;
+}
+
+.task__deadline span,
+.task__users span,
+.task__status span {
+  margin: 0 10px;
+}
+
+.task__users {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.task__controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 10px auto;
+}

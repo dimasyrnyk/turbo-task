@@ -1,0 +1,38 @@
+.user__container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.user__profile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px 15px;
+}
+
+.user_description {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.user_description h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.user_description p {
+  margin: 10px 0;
+}
+
+.user__avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  margin: 0 10px;
+}
+
+.user__count {
+  font-size: 20px;
+  font-weight: bold;
+}

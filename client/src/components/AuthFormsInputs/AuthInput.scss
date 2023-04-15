@@ -1,0 +1,57 @@
+@import "../../styles/colors.scss";
+
+/* ---------- MEDIA SCREEN -- MOBILE ---------- */
+@media (max-width: 600px) {
+  .auth-input__body input[type="text"],
+  .auth-input__body input[type="password"] {
+    font-size: 16px;
+  }
+}
+
+.auth-input__wrapper {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.auth-input__icon {
+  background-color: $background_input_color_grey;
+  border-radius: 3px 0px 0px 3px;
+  -moz-border-radius: 3px 0px 0px 3px;
+  -webkit-border-radius: 3px 0px 0px 3px;
+  color: $text_color_black;
+  display: block;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+}
+
+.auth-input__body {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $background_input_color_lightgrey;
+  border-radius: 0px 3px 3px 0px;
+  -moz-border-radius: 0px 3px 3px 0px;
+  -webkit-border-radius: 0px 3px 3px 0px;
+  color: $text_color_black;
+  font-size: 16px;
+  padding: 0 16px;
+  width: 202px;
+  height: 50px;
+}
+
+.auth-input__body input {
+  overflow: hidden;
+  background-color: $background_input_color_lightgrey;
+  width: 100%;
+}
+
+.auth-input__icon_show-password {
+  margin-left: 5px;
+}
+
+.auth-input__error {
+  margin: -5px 0 5px 0;
+}

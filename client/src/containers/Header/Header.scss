@@ -1,0 +1,40 @@
+@import "../../styles/colors.scss";
+
+/* ---------- MEDIA SCREEN -- MOBILE ---------- */
+@media (max-width: 600px) {
+}
+
+/* ---------- MEDIA SCREEN -- TABLET & DESKTOP ---------- */
+@media screen and (min-width: 601px) {
+  header h1 {
+    margin-left: 20px;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  height: 60px;
+}
+
+header h1 {
+  font-size: calc(12px + 3vmin);
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 1;
+  text-align: center;
+}
+
+header h1 a {
+  color: $links_color_blue;
+}
+
+header nav {
+  text-align: right;
+}
+
+header nav a {
+  display: inline-block;
+  padding: 5px;
+}

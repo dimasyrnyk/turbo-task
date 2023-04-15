@@ -1,0 +1,183 @@
+@import "../../styles/colors.scss";
+
+/* ---------- MEDIA SCREEN -- MOBILE ---------- */
+@media (max-width: 600px) {
+  .task-manager {
+    width: 100%;
+  }
+  .control-panel__controls:last-child {
+    margin-right: 15px;
+  }
+  .task-manager__item {
+    padding: 12px 10px;
+  }
+  .task-manager__header {
+    padding: 10px;
+  }
+  .task-manager__priority,
+  .task-manager__users {
+    display: none;
+  }
+  .task-manager__deadline {
+    width: 90px;
+  }
+  .task-manager__status {
+    width: 110px;
+  }
+}
+
+/* ---------- MEDIA SCREEN -- TABLET ---------- */
+@media screen and (min-width: 601px) {
+  .task-manager {
+    min-width: 600px;
+    max-width: 700px;
+  }
+  .task-manager__item {
+    padding: 12px 10px;
+  }
+  .task-manager__header {
+    padding: 5px 10px;
+  }
+  .task-manager__deadline {
+    width: 100px;
+  }
+  .task-manager__status {
+    width: 110px;
+  }
+}
+
+/* ---------- MEDIA SCREEN -- DESKTOP ---------- */
+@media screen and (min-width: 965px) {
+  .task-manager {
+    width: 700px;
+  }
+  .task-manager__item {
+    padding: 8px 0;
+  }
+  .task-manager__header {
+    padding: 5px 0;
+  }
+  .task-manager__deadline {
+    width: 120px;
+  }
+  .task-manager__status {
+    width: 120px;
+  }
+}
+
+.task-manager {
+  margin: 0 auto;
+  background-color: $background_color_white;
+}
+
+.task-manager__control-panel {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.control-panel__nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.control-panel__controls {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.task-manager__header {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid $border_color_light;
+  border-bottom: 1px solid $border_color_light;
+  font-weight: bold;
+}
+
+.task-manager__list {
+  margin: 0 auto;
+}
+
+.task-manager__item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $border_color_light;
+}
+
+.task-manager__name:first-child {
+  margin-left: 15px;
+}
+
+.task-manager__checkbox,
+.task-manager__checkbox {
+  width: 30px;
+  margin: 3px 10px;
+  -webkit-appearance: checkbox;
+}
+
+.task-manager__name {
+  flex: 2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 5px;
+}
+
+.task-manager__priority {
+  width: 70px;
+}
+
+.task-manager__priority,
+.task-manager__deadline,
+.task-manager__users,
+.task-manager__status {
+  text-align: center;
+}
+
+.task-manager__users {
+  height: 21px;
+  width: 130px;
+}
+
+.task-manager__avatar {
+  width: 25px;
+  margin: 0 3px;
+  border-radius: 20px;
+}
+
+.task-manager__checkbox:checked + .task-item {
+  background-color: $background_color_gray;
+}
+
+/* ---------- PRIORITY BACKGROUND COLORS ---------- */
+.HIGH {
+  background-color: $background_color_red;
+  color: $text_color_white;
+}
+
+.MEDIUM {
+  background-color: $background_color_orange;
+  color: $text_color_white;
+}
+
+.LOW {
+  background-color: $background_color_gray;
+  color: $text_color_white;
+}
+
+/* ---------- STATUS FONT COLORS ---------- */
+.STUCK {
+  color: $text_color_red;
+}
+
+.WORK_ON_IT {
+  color: $text_color_orange;
+}
+
+.DONE {
+  color: $text_color_green;
+}
+
+.NEW {
+  color: $text_color_darkblue;
+}

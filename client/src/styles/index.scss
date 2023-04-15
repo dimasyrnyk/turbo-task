@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic");
+@import "./colors.scss";
+
+@import url(https://weloveiconfonts.com/api/?family=fontawesome);
+
+/* ---------- FONTAWESOME ---------- */
+
+[class*="fontawesome-"]:before {
+  font-family: "FontAwesome", sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+ol,
+ul {
+  list-style: none;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $background_color_white;
+  color: $main_text_color;
+  line-height: 1.5em;
+}
+
+main {
+  min-height: calc(100vh - 180px);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+i {
+  font-style: normal;
+}
+
+.app {
+  margin: 0 auto;
+  max-width: 964px;
+}
+
+.app__loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: $links_color_grey;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $links_color_blue;
+}
+
+input {
+  border: none;
+  outline: none;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  padding: 0;
+  -webkit-appearance: none;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+.bold_font {
+  font-weight: bold;
+}
+.background_lightgrey {
+  background-color: $background_color_light;
+}
+
+.clearfix {
+  *zoom: 1;
+} /* For IE 6/7 */
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+
+/* ---------- MEDIA SCREEN -- MOBILE & TABLET ---------- */
+@media (max-width: 964px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* ---------- MEDIA SCREEN -- DESKTOP ---------- */
+@media screen and (min-width: 965px) {
+  body {
+    font-size: 14px;
+  }
+}
